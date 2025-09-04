@@ -1,6 +1,6 @@
 package in.co.rays.basic;
 import java.util.*;
-public class LarcestOfArray {
+public class LargestOfArray {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int [] num = new int [sc.nextInt()];
