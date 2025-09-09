@@ -25,4 +25,16 @@ public class Account {
 	public void setbalance(double balance) {
 		this.balance = balance;
 	}
+	public void deposit(double amount) {
+		this.balance = this.balance + amount;
+		System.out.println("Totel balance after deposit: "+ this.balance);
+	}
+	public void withdrawal(double amount) {
+		if (amount>this.balance) {
+			System.out.println("Insufficent fund transfer.");
+		} else {
+			this.balance = this.balance - amount;
+			System.out.println("Totel balance after withdrawal: "+ this.balance);
+		}
+	}
 }
