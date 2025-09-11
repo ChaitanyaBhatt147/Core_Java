@@ -14,6 +14,7 @@ public class CountDigitsVowelsCharacter {
 		}
 		System.out.println("Number of digits in "+str1+" is: "+count);
 		count =0;
+		
 		System.out.print("Enter the string in which you have to find the number of vowels: ");
 		String str2 = sc.nextLine();
 		System.out.println();
@@ -23,6 +24,7 @@ public class CountDigitsVowelsCharacter {
 			}
 		}
 		System.out.println("Number of vowels in "+str2+" is: "+count);
+		
 		System.out.print("Enter the string in which you have to find the number of all character occurrence: ");
 		String str3 = sc.nextLine();
 		System.out.println();

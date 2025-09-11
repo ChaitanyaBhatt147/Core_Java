@@ -1,4 +1,4 @@
-package in.co.rays.oop;
+package in.co.rays.oop.encapsulation;
 import java.util.Scanner;
 public class TestAccount {
 	public static void main(String[] args) {

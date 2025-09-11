@@ -1,4 +1,4 @@
-package in.co.rays.oop;
+package in.co.rays.oop.abstraction;
 
 public class Busenessman extends Person implements Richman{
 

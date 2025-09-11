@@ -1,4 +1,4 @@
-package in.co.rays.oop;
+package in.co.rays.oop.encapsulation;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

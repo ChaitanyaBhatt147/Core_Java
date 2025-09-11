@@ -1,4 +1,4 @@
-package in.co.rays.oop;
+package in.co.rays.oop.encapsulation;
 
 public class Account {
 	private String number;
