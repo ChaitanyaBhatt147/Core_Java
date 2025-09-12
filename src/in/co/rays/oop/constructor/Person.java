@@ -2,7 +2,7 @@ package in.co.rays.oop.constructor;
 
 public class Person {
 	public void person() {
-		System.out.println("Person: defolt");
+		System.out.println("Person: defoult");
 	}
 	public void person(String name) {
 		this.person();
