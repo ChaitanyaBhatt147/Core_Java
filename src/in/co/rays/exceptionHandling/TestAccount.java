@@ -1,7 +1,7 @@
 package in.co.rays.exceptionHandling;
 import java.util.Scanner;
 
-import in.co.rays.oop.encapsulation.Account;
+
 public class TestAccount {
 	public static void main(String[] args) throws FundException{
 		Scanner sc = new Scanner(System.in);
