@@ -1,0 +1,219 @@
+<--------------------------------------------Core Java--------------------------------------------->
+# Java is a fully object oriented programming language. Basic unit of the java is object.
+#  Basic elements of the programming language:
+	* Command				:	An action.
+	* Variable/Attribute		:	Memory to remember data.
+	* Data Type				:	Numerical, decimal, character
+	* Control Statements	:	Conditional statements.
+	* Function / Method	:	A task contains set of commands.
+
+# Different types of data type:
+	There are two types of data type:
+		1. Primitive		2. Non-Primitive
+	# Primitive:- Primitive data type are pre defined data type by the language. There are 8 types of primitive data type.
+		* Boolean  	* Character  	* Byte  	* Short  	* Integer	* Long	* Float	* Double	
+	# Non-Primitive:- There are 3 types of non-primitive data types.
+		* String		*Array		* Object
+
+# What is class?
+Class is a blueprint of the object. Defines general behaviors and attribute.
+Basic building block of java is class.  
+Class contains methods and variables.
+Executable class must contain "main( )".
+Each class is an expert class. 
+class Car {
+   String color;
+   void drive() { ... }
+}
+
+# What is object?
+An object is an instance of a class. 
+The object is the real element of a class that has data called state and can perform actions, called behavior. 
+It is created using the 'new' keyword.
+Car c1 = new Car();
+
+# Control Statements:
+	* if-else  	* while		* do-while		*for		* goto
+# if -else syntax:-
+	if (condition ){
+		Statements (s)
+	}else {
+		Statements (s)
+	}
+
+public class Maximum {
+	public static void main (String [] args){
+		int a = 5;
+		int b = 10;
+		if (a > b){
+			System.out.println("Maximum number is: "+ a);
+		} else {
+			System.out.println("Maximum number is: " + b);
+		}
+	}
+}
+
+# While syntax:-
+	while (Boolean - expression){
+		Statements (s)
+	}
+
+public class PrintHello {
+	public static void main(String [] args){
+		int a = 5;
+		while (a >0){
+			System.out.println("Hello World");
+			a--;
+		}
+	}
+}
+
+# Do - While syntax:-
+	do{
+		Statements (s)
+	}while (Boolean - expression)
+
+
+public class PrintHello {
+	public static void main(String [] args){
+		int a = 5;
+		do{
+			System.out.println("Hello World");
+			a--;
+		}while (a >0)
+	}
+}
+
+# For syntax:-
+	for(initialization ; condition; increment/decrement){
+		Statements (s)
+	}
+
+public class PrintHello {
+	public static void main(String [] args){
+		for (int i = 0 ; i< 5 ; i++){
+			System.out.println("Hello World");
+		}
+	}
+}
+
+#Switch Statement syntex:-
+	switch(Control-expression){
+		case Control-expression_1:
+			Statement_1
+		.......
+		case Control-expression_n:
+			Statement_n
+		default:
+			default Statement
+	}
+
+public class SwitchPrintDayName {
+	public static void main(String[] args){
+		int day = 1;
+		String dayString = null;
+		Switch (day){
+			case 0:
+				dayString = "Sunday";
+				break;
+			case 1:
+				dayString = "Monday";
+				break;
+			........
+			default:
+				dayString = "This day is yet to come, pl wait!!";
+
+		}
+		System.out.println(dayString);
+	}
+}
+
+
+#$# Class and Objects #$#
+
+# Class:
+	* A class contains variables, constants, constructor, method, inner classes, and interfaces.
+	* A class defines the state and behavior of an object.
+	* Class is nothing but defining the structure of an object.
+	* Class should be an expert class that contains related attributes and methods and provide expert services.
+* Member variables in a class are called fields.
+* Variable declaration statement is composed of their components:
+	@ Zero or more modifiers, such as static, public, protected or private.
+	@ The field's type such as int, float, double, etc.
+	@ the field's name.
+# Method calling: A method can be invoked with its object name which is followed by a dot and method name.
+# 'this' key word: Within the instance method or a constructor, 'this' keyword can be used to refer the current object.
+
+# Modifier : A class, method and variable may be declared with one or more modifiers that affects their runtime behavior.
+	* There are two types of modifier. 1. Access Modifier		2. Non - Access modifier
+	* Java Access modifier : @ Public		@ Protected 	@ Default 	@ Private
+	* Non - Access Modifier: @ Static 	@ final 	@ Abstract 	@ Synchronized 	@ Volatile
+@ Public : Method, constructors, and attributes can be declared public (least restrictive) with a public class. 
+@ Private : The private (most restrictive) attributes or methods cannot be used outside the class.
+@ Protected : Attributes, methods and constructors declared protected in a superclass can be accessed only by subclasses in other package. 
+@ Static: The 'static' keywords is used in java mainly for memory managements.
+	* If you declare a variable with 'static' keyword, it is called as static variable. It gets memory once in life, at the time of class loading.
+	* The 'static' keyword is used to create a static method. It belongs to the class rather than an object of a class.
+	* Static blocks are executed before main method after class is loaded.
+@Final: The 'final' keyword is use to restrict the variable, method and a class.
+	* If a variable is defined as 'final', then its value cannot be changed.
+	* If a method is defined as 'final' then it cannot be overridden by child classes.
+	* If a class is defined as 'final' then it cannot be inherited.
+@ Abstract: The 'abstract' keyword is used to make class or method abstract. If a class is declared as abstract, then the sole purpose of the class is to be extended. It enforces child class to implement specialized behavior of abstract methods.
+	* Method that is declared without the body within an abstract class is called an abstract method.
+
+# Encapsulation
+	* Wrapping of data (variables) and code (methods) together as a single unit.
+	* Achieved using private variables + public getters & setters.
+class Student {
+   private String name;
+   public void setName(String n) { name = n; }
+   public String getName() { return name; }
+}
+
+# Inheritance
+	*Mechanism where one class acquires properties and behaviors of another.
+	* Promotes code reusability.
+	* 'extends' keyword is used.
+class Animal { void eat() {} }
+class Dog extends Animal { void bark() {} }
+
+# Polymorphism
+	* Ability of an object to take many forms.
+	* Compile-time (Method Overloading).
+	class MathOp {
+		int add(int a, int b) { return a+b; }
+   		double add(double a, double b) { return a+b; }
+	}
+
+	* Runtime (Method Overriding).
+	class Animal { void sound() { System.out.println("Generic sound"); } }
+	class Dog extends Animal { void sound() { System.out.println("Bark"); } }
+
+# Abstraction
+	* Hiding implementation details and showing only essential features.
+	* Achieved using abstract classes and interfaces.
+abstract class Shape {
+   abstract void draw();
+}
+class Circle extends Shape {
+   void draw() { System.out.println("Drawing Circle"); }
+}
+
+# Constructor
+	* Special method used to initialize objects.
+	* Same name as class, no return type.
+	* Types:
+		@ Default constructor.
+		@ Parameterized constructor.
+		@ Copy constructor (Java doesn’t support directly, but can be created manually).
+
+# 'this' and 'super' keywords
+	@ This: Refers to current object.
+	@ Super: Refers to immediate parent class object (used to access parent methods, variables, constructors).
+
+# OOP Advantages
+	* Modularity: Easy to debug and maintain.
+	* Reusability: Code reuse through inheritance.
+	* Scalability: Suitable for large projects.
+	* Security: Encapsulation and access control.
