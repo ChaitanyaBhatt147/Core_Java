@@ -2,7 +2,7 @@
 # Java is a fully object oriented programming language. Basic unit of the java is object.
 #  Basic elements of the programming language:
 	* Command				:	An action.
-	* Variable/Attribute	:	Memory to remember data.
+	* Variable/Attribute		:	Memory to remember data.
 	* Data Type				:	Numerical, decimal, character
 	* Control Statements	:	Conditional statements.
 	* Function / Method	:	A task contains set of commands.
@@ -145,7 +145,7 @@ public class SwitchPrintDayName {
 # 'this' key word: Within the instance method or a constructor, 'this' keyword can be used to refer the current object.
 
 # Modifier : A class, method and variable may be declared with one or more modifiers that affects their runtime behavior.
-	* There are two types of modifier. 1. Access Modifier		2. Non - Access modifier
+	* There are two types of modifier. 1. Java Access Modifier		2. Non - Access modifier
 	* Java Access modifier : @ Public		@ Protected 	@ Default 	@ Private
 	* Non - Access Modifier: @ Static 	@ final 	@ Abstract 	@ Synchronized 	@ Volatile
 @ Public : Method, constructors, and attributes can be declared public (least restrictive) with a public class. 
@@ -161,6 +161,24 @@ public class SwitchPrintDayName {
 	* If a class is defined as 'final' then it cannot be inherited.
 @ Abstract: The 'abstract' keyword is used to make class or method abstract. If a class is declared as abstract, then the sole purpose of the class is to be extended. It enforces child class to implement specialized behavior of abstract methods.
 	* Method that is declared without the body within an abstract class is called an abstract method.
+@ Synchronized: The 'synchronized' keyword is used to make method or block synchronized. A synchronized block or method can be accessed by only one thread at a time.
+@ Transient: The 'transient' keyword is used to make an instance variable transient. It indicates to JVM to skip this variable when object is serializes.
+@ Volatile: the 'volatile' keyword is used to make an instance variable volatile.
+
+# Package
+	* Java has its own built-in classes that are organised and grouped into java packages.
+	* Packages are typically used to group classes in to logical unites.
+	* Another main reason behind using packages is to avoid name collision of class. A name collision occurs when two classes are written with same name.
+	* The fully qualified name of a class in java consist of package name followed by a dot(.) and class name.
+	* Package can be defined at the top of a class, interface, enumeration, and annotation type using 'package' keyword.
+	* An import statement can be used at the beginning of source file to import members from other package. Import statements are written after package statement.
+	* To import all members from the package, you can write import statement with the asterisk (*) wildcard character.
+	* A member can be used by fully qualified name without using import statement.
+
+# String
+	* String objects are immutable, which means once a string object is created its value cannot be changed. If you change the value, a new string object will be created.
+	* The "StringBuffer" class is used to create a mutable string. The StringBuffer class is same as String except it is mutable i.e. it can be changed.
+	* The StringBuilder class is same as StringBuffer except that it is non - synchronized.
 
 # Encapsulation
 	* Wrapping of data (variables) and code (methods) together as a single unit.
