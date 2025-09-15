@@ -2,7 +2,7 @@
 # Java is a fully object oriented programming language. Basic unit of the java is object.
 #  Basic elements of the programming language:
 	* Command				:	An action.
-	* Variable/Attribute		:	Memory to remember data.
+	* Variable/Attribute	:	Memory to remember data.
 	* Data Type				:	Numerical, decimal, character
 	* Control Statements	:	Conditional statements.
 	* Function / Method	:	A task contains set of commands.
