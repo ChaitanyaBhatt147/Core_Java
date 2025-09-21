@@ -1,7 +1,7 @@
-<--------------------------------------------Core Java--------------------------------------------->
-# Java is a fully object oriented programming language. Basic unit of the java is object.
-#  Basic elements of the programming language:
-	* Command				:	An action.
+<-----------------------------------------------------Core Java------------------------------------------>
+ Java is a fully object oriented programming language. Basic unit of the java is object.
+Basic elements of the programming language:
+	*Command				:	An action.
 	* Variable/Attribute		:	Memory to remember data.
 	* Data Type				:	Numerical, decimal, character
 	* Control Statements	:	Conditional statements.
@@ -180,6 +180,14 @@ public class SwitchPrintDayName {
 	* The "StringBuffer" class is used to create a mutable string. The StringBuffer class is same as String except it is mutable i.e. it can be changed.
 	* The StringBuilder class is same as StringBuffer except that it is non - synchronized.
 
+# Object Class
+	* Object class in 'java.lang' package is the parent of all the classes in java.
+	* Few methods of this class are 'clone()', 'equals()', 'finalize()', 'getClass()', 'hashCode()', 'toString()', 'wait()', 'notify()', 'notifyAll()'.
+
+# System Class 
+	* System class in 'java.lang' package is a final class and all of its variables and methods are static.
+	* System class provides fields for standard input, standard output, and error output streams.
+
 # Encapsulation
 	* Wrapping of data (variables) and code (methods) together as a single unit.
 	* Achieved using private variables + public getters & setters.
@@ -235,3 +243,28 @@ class Circle extends Shape {
 	* Reusability: Code reuse through inheritance.
 	* Scalability: Suitable for large projects.
 	* Security: Encapsulation and access control.
+
+# Exception Handling
+	* It can be defined as an abnormal condition that occurs during the program execution and disrupts the normal flow of a program.
+	* Alternat path to handle an exception, it is known as exception handling.
+
+# Call Stack
+	* The call stack represents the sequence of method calls from the current method and back to the main method of the program. 
+	* In case of an exception, the JVM searches the call stack for a method that contains a block of code that can handle the exception.
+# Exception Hierarchy
+	* The 'Throwable' class is the superclass of all errors and exceptions in java language.
+	* Only this class or one of its subclasses can be the argument type in a 'catch' block.
+	* Subclass 'Error' represents the exceptions that cannot be handled programmatically.
+	* Subclass 'Exception' represent the exceptions that can be handled and an alternate action can be taken if any exception occurs.
+	* Types of Exceptions
+		@ Unchecked : These exceptions are optional to handle.
+		@ Checked : These exceptions are mandatory to handle.
+	* Exception handling is done by 'try-catch-finally' block. The 'try' may have multiple 'catch' blocks. Block 'finally' is optional and always executed.
+	* Exception may be of two types:
+		@ System generated
+		@ Programmer generated
+	* System generated exception are thrown by java, runtime when an exception event occurs. A programmer can instantiate and raise an exception to represent some type of error within the 	application. An exception can be raised by 'throw' keyword.
+	* Exception Class
+		@ getMessage(): Returns the detailed message of thrown exception.
+		@ printStackTrace(): This method prints a stack trace of exception object on the error output stream (System.err).
+	* Exception Propagation: Sometimes a method dose not wish to handle an exception and allows its calling method to know what exception is occurred. This is called exception propagation.
