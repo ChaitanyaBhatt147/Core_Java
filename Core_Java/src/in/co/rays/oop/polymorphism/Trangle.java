@@ -18,4 +18,13 @@ public class Trangle extends Shape{
 		double area  = 0.5* height * base;
 		return area;
 	}
+	public Trangle() {
+		// TODO Auto-generated constructor stub
+	}
+	public void setHeight(int height) {
+		this.height = height;
+	}
+	public void setBase(int base) {
+		this.base = base;
+	}
 }

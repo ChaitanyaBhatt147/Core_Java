@@ -18,4 +18,13 @@ public class Rectangle extends Shape{
 		double area = length * width;
 		return area;
 	}
+	public void setLength(int length) {
+		this.length = length;
+	}
+	public void setWidth(int width) {
+		this.width = width;
+	}
+	public Rectangle() {
+		// TODO Auto-generated constructor stub
+	}
 }

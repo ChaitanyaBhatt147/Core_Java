@@ -18,4 +18,15 @@ public class Shape {
 	public double area() {
 		return  0.0;
 	}
+	
+	public static Shape getShape(int i) {
+		if (i == 0) {
+			return new Circle();
+		} else if (i == 1) {
+			return new Rectangle();			
+		}else if(i ==2) {
+			return new Trangle();			
+		}
+		return new Shape();
+	}
 }
