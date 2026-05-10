@@ -266,11 +266,36 @@ class Circle extends Shape {
 	* System generated exception are thrown by java, runtime when an exception event occurs. A programmer can instantiate and raise an exception to represent some type of error within the 	application. An exception can be raised by 'throw' keyword.
 	* Exception Class
 		@ getMessage(): Returns the detailed message of thrown exception.
-		@ printStackTrace(): This method prints a stack trace of exception object on the error output stream (System.err).
+		@ printStackTrace(): This method prints a stack trace of exception object on the error output stream (System.error).
 	* Exception Propagation: Sometimes a method dose not wish to handle an exception and allows its calling method to know what exception is occurred. This is called exception propagation.
 
-
-
-
-
-
+# Collection Framework
+	* The Collection framework is a unified architecture for representing and mainpulating set of elements called collection.
+	* A collection represents a group of objects, known as its elements.
+	* The collection Framework consist of four key interfaces:
+		@ Collection	@ Set	@ List	@ Queue
+	* Interfaces Set, List, Queue are the child of Collection.
+	* Two more interfaces 'Map' and 'SortedMap' are considered part of the Collection FrameWork.
+	* These Interfaces have multiple implementation classes for single-user and multi-user application.
+		@ Set : 1. HashSet	2. TreeSet (SortedSet)
+		@ List : 1. ArrayList		2. LinkList	3. Vactor (Historical)	4. Stack (Historical)
+		@ Queue : 1. ArrayDeQueue		2. PriorityQueue
+		@ Map :	1. HashMap		2. TreeMap (SortedMap)	3. HashTable (Historical)	4. Properties
+	* The package 'java.util' contaims collection framework classes.
+	* Methods:
+		@ add (o) : Adds a new element.
+		@ addAll (c) : Adds a collection.
+		@ clear () :	Removes all elements.
+		@ contains (o) : Membership checking.
+		@ containsAll (c) : Inclusion checking.
+		@ isEmpty () : Weather it is empty.
+		@ iterator () : Returns an iterator.
+		@ remove (o) : Remove an element.
+		@ removeAll (c) : Remove all the elements matching passed collection.
+		@ retainAll (c) : Retain all the elements matching passed collection.
+		@ size () : The number of elements.
+	* Iterator Interface: An iterator is a generic way to iterate all elements of a collection. Method iterator() returns the Iterator object of collection.
+		@ hasNext(): Returns true if iterator has more value.
+		@ next(): Returns next element in the iterator.
+		@ remove(): removes the element from the collection.
+	Iterator takes the place of Enumeration in java collection frame work.
